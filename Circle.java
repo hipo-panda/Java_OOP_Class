@@ -1,10 +1,16 @@
-package Java.PJS.chusang;
+package Java.PJS.Javagit2;
 
-public class Circle extends Shape {
+public class Circle {
+    private int radius;
+    private Point center;
 
-    @Override
-    public void draw() {
-        System.out.println("원을 그립니다.");
+    public Circle(Point p, int r) {
+        center = p;
+        radius = r;
     }
 
+    @Override
+    public String toStirng() {
+        return "Circle [radius = " + radius + " center = " + center + "]";
+    }
 }

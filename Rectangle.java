@@ -1,8 +1,21 @@
-package Java.PJS.chusang;
+package Java.PJS.Javagit2;
 
-public class Rectangle extends Shape {
-    public void draw() {
-        System.out.println("사각형을 그립니다.");
+public class Rectangle {
+    private int x, y;
+    private int width, height;
+
+    Rectangle() {
+        this(0, 0, 1, 1);
     }
 
+    Rectangle(int width, int height) {
+        this(0, 0, width, height);
+    }
+
+    Rectangle(int x, int y, int width, int height) {
+        this.x = x;
+        this.y = y;
+        this.width = width;
+        this.height = height;
+    }
 }
